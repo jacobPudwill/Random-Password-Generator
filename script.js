@@ -51,7 +51,14 @@ function generatePassword(){
     var password = "";
     var passwordLength = getPasswordLength();
     var passwordCharacters = getPasswordCharacters();
-    
+    var randInt;
+
+    for (let i = 0; i < passwordLength; i++){
+        randInt = Math.floor(Math.random() * (passwordCharacters.length));
+        password += passwordCharacters.substring(randInt, randInt + 1);
+    }
+
+    return password;
 }
 
 // Write password to the #password input
