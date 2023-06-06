@@ -10,3 +10,4 @@ Generates a random password between 8-128 characters in length, with possible ch
 
 ## Link to Deployed Application
 
+https://jacobpudwill.github.io/Random-Password-Generator/
